@@ -96,7 +96,7 @@ function kartTiklama(olay) {
 
         if (puan == 4){
             var congrats = document.createElement('img');
-            congrats.src = '../img/congratulations.gif';
+            congrats.src = "https://media.giphy.com/media/BPJmthQ3YRwD6QqcVD/giphy.gif";
             imageShow = document.querySelector('body').appendChild(congrats);
             console.log("Image Created");
 
