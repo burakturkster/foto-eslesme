@@ -15,21 +15,20 @@ const kartTemplate = `
     </div>
 `;
 
-const generateRandomPairs = () => {
-    const pairs = [];
+const rastgeleCiftleriOlustur = () => {
+    const ciftler = [];
   
     for (let i = 0; i < 4; i++) {
-      const randomNumber = Math.floor(Math.random() * 99) + 1;
-      pairs.push(randomNumber, randomNumber);
+      const rastgeleSayi = Math.floor(Math.random() * 99) + 1;
+      ciftler.push(rastgeleSayi, rastgeleSayi);
     }
   
-    return pairs;
+    return ciftler;
   };
   
-  const fotoNumaralari = generateRandomPairs();
+  const fotoNumaralari = rastgeleCiftleriOlustur();
   
   console.log(fotoNumaralari);
-  
 
 for (fotoNumara of fotoNumaralari) {
     const yenikart = document.createElement("div");
