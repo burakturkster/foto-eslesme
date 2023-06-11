@@ -15,20 +15,21 @@ const kartTemplate = `
     </div>
 `;
 
-let randomNum = function(){
-    let randomArray = [];
-    for (let i = 0; i < 8; i++){
-       let randomNumbers = Math.floor(Math.random() * 99);
-        randomArray.push(randomNumbers, randomNumbers);
-        if (randomArray.length > 6) break;
+const generateRandomPairs = () => {
+    const pairs = [];
+  
+    for (let i = 0; i < 4; i++) {
+      const randomNumber = Math.floor(Math.random() * 99) + 1;
+      pairs.push(randomNumber, randomNumber);
     }
-    return randomArray
-};
-
-const fotoNumaralari = randomNum();
-//[10, 20, 30, 20, 10, 40, 40, 30];
-
-console.log(fotoNumaralari);
+  
+    return pairs;
+  };
+  
+  const fotoNumaralari = generateRandomPairs();
+  
+  console.log(fotoNumaralari);
+  
 
 for (fotoNumara of fotoNumaralari) {
     const yenikart = document.createElement("div");
